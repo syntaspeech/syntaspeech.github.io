@@ -13,8 +13,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
-<link rel="alternate" href="/default" title="SyntaSpeech" ><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.1" />
-<link rel="canonical" href="http://yoursite.com/"/>
+<meta name="description" content="SyntaSpeech: Syntax-Aware Generative Adversarial Text-to-Speech"/><link rel="alternate" href="/default" title="SyntaSpeech" ><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.1" />
+<link rel="canonical" href="http://yoursite.com/syntaspeech/"/>
 
 <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.11.1" />
@@ -23,7 +23,7 @@
   window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":"","latex":false};
 </script>
 
-    <title>SyntaSpeech</title>
+    <title>SyntaSpeech: Syntax-Aware Generative Adversarial Text-to-Speech - SyntaSpeech</title>
   <meta name="generator" content="Hexo 6.0.0"></head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -48,15 +48,20 @@
 
       <main id="main" class="main">
         <div class="content-wrapper">
-          <div id="content" class="content"><section id="posts" class="posts"><article class="post">
+          <div id="content" class="content"><article class="post">
     <header class="post-header">
-      <h1 class="post-title"><a class="post-link" href="/syntaspeech/">SyntaSpeech: Syntax-Aware Generative Adversarial Text-to-Speech</a>
+      <h1 class="post-title">SyntaSpeech: Syntax-Aware Generative Adversarial Text-to-Speech
         </h1>
 
       <div class="post-meta"></div>
     </header>
 
-    <div class="post-content"><h1 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h1><p>The recent progress in non-autoregressive text-to-speech (NAR-TTS) has made fast and high-quality speech synthesis possible. Recent application of dependency relation in autoregressive text-to-speech (AR-TTS) proves that incorporating syntactic information of the input text could help improve the prosody of the synthesized audio. However, current NAR-TTS structures cannot effectively model the tree-structured syntactic information. To this end, we propose SyntaSpeech, a syntax-aware and light-weight NAR-TTS module. Specifically, 1) We build a syntactic graph based on the dependency tree of the input sentence, then process the text encoding with a syntactic graph encoder to extract the syntactic information. 2) We incorporate the extracted syntactic encoding with PortaSpeech to improve the prosody prediction. 3) We introduce multi-length discriminator to improve the naturalness of the generated audio. Experiments on three datasets not only show that SyntaSpeech outperforms other TTS models, but also demonstrate the generalization ability of SyntaSpeech to adapt on multiple languages and multi-speaker text-to-speech. Ablation studies demonstrate the necessity of each component in SyntaSpeech.</p>
+    <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Abstract"><span class="toc-text">Abstract</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Audio-Samples"><span class="toc-text">Audio Samples</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#LJSpeech-English-single-speaker"><span class="toc-text">LJSpeech (English, single-speaker)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BiaoBei-Mandarin-single-speaker"><span class="toc-text">BiaoBei (Mandarin, single-speaker)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LibriTTS-English-multi-speaker"><span class="toc-text">LibriTTS (English, multi-speaker)</span></a></li></ol></li></ol>
+    </div>
+  </div><div class="post-content"><h1 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h1><p>The recent progress in non-autoregressive text-to-speech (NAR-TTS) has made fast and high-quality speech synthesis possible. Recent application of dependency relation in autoregressive text-to-speech (AR-TTS) proves that incorporating syntactic information of the input text could help improve the prosody of the synthesized audio. However, current NAR-TTS structures cannot effectively model the tree-structured syntactic information. To this end, we propose SyntaSpeech, a syntax-aware and light-weight NAR-TTS module. Specifically, 1) We build a syntactic graph based on the dependency tree of the input sentence, then process the text encoding with a syntactic graph encoder to extract the syntactic information. 2) We incorporate the extracted syntactic encoding with PortaSpeech to improve the prosody prediction. 3) We introduce multi-length discriminator to improve the naturalness of the generated audio. Experiments on three datasets not only show that SyntaSpeech outperforms other TTS models, but also demonstrate the generalization ability of SyntaSpeech to adapt on multiple languages and multi-speaker text-to-speech. Ablation studies demonstrate the necessity of each component in SyntaSpeech.</p>
 <p><img align="center" src="/syntaspeech/arch.png" style="  display: block;
   margin-left: auto;
   margin-right: auto;
@@ -514,8 +519,12 @@
 </table>
 </ol>
 
-        </div></article>
-      <nav class="pagination"></nav></section></div></div>
+      </div>
+      
+      <footer class="post-footer">
+        
+        <nav class="post-nav"></nav></footer>
+    </article></div><div class="comments" id="comments"></div></div>
       </main>
 
       <footer id="footer" class="footer"></footer>

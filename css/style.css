@@ -365,7 +365,7 @@ th {
   padding: 0; }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
   box-sizing: border-box; }
 
 body {
@@ -383,7 +383,7 @@ body {
   body.hide-top {
     border-top: 3px solid transparent; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   body {
     border-top: 0; } }
 
@@ -402,15 +402,15 @@ a {
   text-decoration: none; }
 
 h1 {
-  font-size: 26px;
+  font-size: 35px;
   font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
   font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
 
 h3 {
-  font-size: 20px;
+  font-size: 25px;
   font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
 
 h4 {
@@ -427,9 +427,9 @@ h6 {
 
 .container {
   margin: 0 auto;
-  width: 800px; }
+  width: 1200px; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .container {
     width: 100%;
     box-shadow: -1px -5px 5px #cacaca; } }
@@ -452,7 +452,7 @@ h6 {
   height: 100%; }
 
 .header {
-  padding: 20px 20px; }
+  padding: 0px 0px; }
   .header:before, .header:after {
     content: " ";
     display: table; }
@@ -461,9 +461,9 @@ h6 {
   .header .logo-wrapper {
     float: left; }
     .header .logo-wrapper .logo {
-      font-size: 48px;
+      font-size: 0px;
       font-family: "Chancery", cursive, LiSu, sans-serif; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1200px) {
     .header .logo-wrapper {
       display: none; } }
   .header .site-navbar {
@@ -484,7 +484,7 @@ h6 {
         position: relative;
         overflow: hidden; }
         .header .site-navbar .menu .menu-item + .menu-item {
-          margin-left: 10px; }
+          margin-left: 0px; }
         .header .site-navbar .menu .menu-item:before {
           content: '';
           position: absolute;
@@ -501,28 +501,28 @@ h6 {
           right: 0;
           left: 0; }
       .header .site-navbar .menu .menu-item-link {
-        font-size: 18px; }
-  @media screen and (max-width: 800px) {
+        font-size: 0px; }
+  @media screen and (max-width: 1200px) {
     .header .site-navbar {
       display: none; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .header {
     padding: 50px 0 0;
     text-align: center; } }
 
 .posts {
-  margin-bottom: 20px; }
+  margin-bottom: 0px; }
 
 .post {
-  padding: 1.5em 0; }
+  padding: 0em 0; }
   .post + .post {
-    border-top: 1px solid #e6e6e6; }
+    border-top: 0px solid #e6e6e6; }
   .post .post-header {
     margin-bottom: 20px; }
     .post .post-header .post-title {
       margin: 0;
-      font-size: 27px;
+      font-size: 64px;
       font-weight: 400;
       font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
     .post .post-header .post-link {
@@ -574,7 +574,7 @@ h6 {
   .post .post-toc {
     position: absolute;
     width: 200px;
-    margin-left: 785px;
+    margin-left: 1185px;
     padding: 10px;
     font-family: Athelas, STHeiti, Microsoft Yahei, serif;
     border-radius: 5px;
@@ -599,7 +599,7 @@ h6 {
           padding-left: 15px; }
       .post .post-toc .post-toc-content .toc-link.active {
         color: #c05b4d; }
-  @media screen and (max-width: 1185px) {
+  @media screen and (max-width: 1585px) {
     .post .post-toc {
       display: none; } }
   .post .post-content h1 {
@@ -661,7 +661,8 @@ h6 {
       background: #f8f5ec; }
     .post .post-content table th, .post .post-content table td {
       padding: 5px 15px;
-      border: 1px double #f4efe1; }
+      border: 1px double #f4efe1;
+      align-content: "center"; }
   .post .post-content code, .post .post-content pre {
     padding: 7px;
     font-size: 13px;
@@ -951,11 +952,11 @@ h6 {
         width: 200px;
         height: 200px; }
   .post .post-footer {
-    margin-top: 20px;
+    margin-top: 0px;
     border-top: 1px solid #e6e6e6;
     font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
     .post .post-footer .post-tags {
-      padding: 15px 0; }
+      padding: 0px 0; }
       .post .post-footer .post-tags a {
         margin-right: 5px;
         color: #c05b4d;
@@ -989,7 +990,7 @@ h6 {
           transform: translateX(4px); }
       .post .post-footer .post-nav .nav-mobile {
         display: none; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1200px) {
     .post .post-footer .post-nav .nav-default {
       display: none; }
     .post .post-footer .post-nav .nav-mobile {
@@ -1086,7 +1087,7 @@ h6 {
       .archive .archive-post:hover .archive-post-title .archive-post-link {
         color: #a14639; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .archive {
     margin-left: auto;
     margin-right: auto; }
@@ -1107,7 +1108,7 @@ h6 {
   font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
   .tag-cloud .tag-cloud-title {
     display: inline-block;
-    font-size: 18px;
+    font-size: 0x;
     color: #c05b4d;
     border-bottom: 2px solid #c05b4d; }
   .tag-cloud .tag-cloud-tags {
@@ -1130,7 +1131,7 @@ h6 {
   font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
   .categories .categories-title {
     display: inline-block;
-    font-size: 18px;
+    font-size: 0px;
     color: #c05b4d;
     border-bottom: 2px solid #c05b4d; }
   .categories .categories-tags {
@@ -1279,7 +1280,7 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 0px;
   background: #fefefe;
   box-shadow: 0px 2px 2px #cacaca;
   text-align: center;
@@ -1292,12 +1293,12 @@ h6 {
     margin-right: 50px; }
     .mobile-navbar .mobile-header-logo .logo {
       font-size: 22px;
-      line-height: 50px;
+      line-height: 0px;
       font-family: "Chancery", cursive, LiSu, sans-serif; }
   .mobile-navbar .mobile-navbar-icon {
     color: #c05b4d;
-    height: 50px;
-    width: 50px;
+    height: 0px;
+    width: 0px;
     font-size: 24px;
     text-align: center;
     float: left;
@@ -1392,7 +1393,7 @@ h6 {
       .mobile-menu .mobile-menu-list a:hover {
         color: #c05b4d; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .mobile-navbar {
     display: block; } }
 
@@ -1408,7 +1409,7 @@ h6 {
   .back-to-top:hover {
     transform: translateY(-5px); }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .back-to-top {
     display: none !important; } }
 
