@@ -56,7 +56,64 @@
       <div class="post-meta"></div>
     </header>
 
-    <div class="post-content"><h1 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h1><p>The recent progress in non-autoregressive text-to-speech (NAR-TTS) has made fast and high-quality speech synthesis possible. However, current NAR-TTS models usually use phoneme sequence as input and thus cannot understand the tree-structured syntactic information of the input sequence, which hurts the prosody modeling. To this end, we propose SyntaSpeech, a syntax-aware and light-weight NAR-TTS model, which integrates tree-structured syntactic information into the prosody modeling modules in PortaSpeech. Specifically, 1) We build a syntactic graph based on the dependency tree of the input sentence, then process the text encoding with a syntactic graph encoder to extract the syntactic information. 2) We incorporate the extracted syntactic encoding with PortaSpeech to improve the prosody prediction. 3) We introduce a multi-length discriminator to replace the flow-based post-net in PortaSpeech, which simplifies the training pipeline and improves the inference speed, while keeping the naturalness of the generated audio. Experiments on three datasets not only show that the tree-structured syntactic information grants SyntaSpeech the ability to synthesize better audio with expressive prosody, but also demonstrate the generalization ability of SyntaSpeech to adapt to multiple languages and multi-speaker text-to-speech. Ablation studies demonstrate the necessity of each component in SyntaSpeech.</p>
+    <div class="post-content"><h1 id="Updates-Audio-Samples-in-Rebuttal"><a href="#Updates-Audio-Samples-in-Rebuttal" class="headerlink" title="[Updates] Audio Samples in Rebuttal"></a>[Updates] Audio Samples in Rebuttal</h1><h3 id="We-additionally-run-Glow-TTS-NeurIPS-2020-and-DiffSpeech-AAAI-2022-on-LJSpeech-to-make-comparison-with-flow-based-and-diffusion-based-models"><a href="#We-additionally-run-Glow-TTS-NeurIPS-2020-and-DiffSpeech-AAAI-2022-on-LJSpeech-to-make-comparison-with-flow-based-and-diffusion-based-models" class="headerlink" title="We additionally run Glow-TTS (NeurIPS 2020) and DiffSpeech (AAAI 2022) on LJSpeech, to make comparison with flow-based and diffusion-based models."></a>We additionally run Glow-TTS (NeurIPS 2020) and DiffSpeech (AAAI 2022) on LJSpeech, to make comparison with flow-based and diffusion-based models.</h3><ol>
+<li style="text-align: left;font-size: 20px; font-style: italic">"The essential point to be remembered is that the ornament, whatever it is, whether picture or pattern work, should form part of the page"</li> 
+<table style="width: 100%;">
+    <thead>
+    <tr>
+        <th></th>
+        <th align="center">Glow-TTS</th>
+        <th align="center">DiffSpeech</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">wav</th>
+        <td><audio controls><source src="syntaspeech/audio/lj/Glow-TTS/1.wav" type="audio/wav"></audio></td>
+        <td><audio controls><source src="syntaspeech/audio/lj/DiffSpeech/1.wav" type="audio/wav"></audio></td>
+    </tr>
+</tbody>
+</table>
+<p></p>
+  <li style="text-align: left;font-size: 20px; font-style: italic">"John of Spires and his brother Vindelin, followed by Nicolas Jenson, began to print in that city"</li> 
+<table style="width: 100%;">
+    <thead>
+    <tr>
+        <th></th>
+        <th align="center">Glow-TTS</th>
+        <th align="center">DiffSpeech</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">wav</th>
+        <td><audio controls><source src="syntaspeech/audio/lj/Glow-TTS/2.wav" type="audio/wav"></audio></td>
+        <td><audio controls><source src="syntaspeech/audio/lj/DiffSpeech/2.wav" type="audio/wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
+<p></p>
+  <li style="text-align: left;font-size: 20px; font-style: italic">"And things got worse and worse through the whole of the seventeen century, so that in the eighteeth printing was very miserably performed."</li> 
+<table style="width: 100%;">
+    <thead>
+    <tr>
+        <th></th>
+        <th align="center">Glow-TTS</th>
+        <th align="center">DiffSpeech</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">wav</th>
+        <td><audio controls><source src="syntaspeech/audio/lj/Glow-TTS/3.wav" type="audio/wav"></audio></td>
+        <td><audio controls><source src="syntaspeech/audio/lj/DiffSpeech/3.wav" type="audio/wav"></audio></td>
+    </tr>
+</tbody>
+</table>
+</ol>
+
+
+<h1 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h1><p>The recent progress in non-autoregressive text-to-speech (NAR-TTS) has made fast and high-quality speech synthesis possible. However, current NAR-TTS models usually use phoneme sequence as input and thus cannot understand the tree-structured syntactic information of the input sequence, which hurts the prosody modeling. To this end, we propose SyntaSpeech, a syntax-aware and light-weight NAR-TTS model, which integrates tree-structured syntactic information into the prosody modeling modules in PortaSpeech. Specifically, 1) We build a syntactic graph based on the dependency tree of the input sentence, then process the text encoding with a syntactic graph encoder to extract the syntactic information. 2) We incorporate the extracted syntactic encoding with PortaSpeech to improve the prosody prediction. 3) We introduce a multi-length discriminator to replace the flow-based post-net in PortaSpeech, which simplifies the training pipeline and improves the inference speed, while keeping the naturalness of the generated audio. Experiments on three datasets not only show that the tree-structured syntactic information grants SyntaSpeech the ability to synthesize better audio with expressive prosody, but also demonstrate the generalization ability of SyntaSpeech to adapt to multiple languages and multi-speaker text-to-speech. Ablation studies demonstrate the necessity of each component in SyntaSpeech.</p>
 <p><img align="center" src="/syntaspeech/arch.png" style="  display: block;
   margin-left: auto;
   margin-right: auto;
